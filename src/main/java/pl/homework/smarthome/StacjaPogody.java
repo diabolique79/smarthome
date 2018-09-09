@@ -7,26 +7,28 @@ import java.util.Random;
 @Component
 public class StacjaPogody {
 
-//    private int temperature;
-//    private String weather;
-//
-//
-//    public StacjaPogody(int temperature, String weather) {
-//        this.temperature = temperature;
-//        this.weather = weather;
-//    }
+private Integer temperature;
+private String weather;
+
+
+    public StacjaPogody(Integer temperature, String weather) {
+        this.temperature = temperature;
+        this.weather = weather;
+    }
 
     public int getTemperature() {
-        Random random = new Random();
-        Integer temp = random.nextInt((61)-25);
-        return temp;
+
+        if(temperature == null){
+            Random random = new Random();
+            temperature = random.nextInt((61)-25);
+        }
+
+        return temperature;
     }
 
     public String weather() {
         Random random = new Random();
         Integer temp = random.nextInt(2);
-        String weather = "";
-
         if(temp == 1){
 
             weather = "słonecznie";
