@@ -11,10 +11,10 @@ private Integer temperature;
 private String weather;
 
 
-    public StacjaPogody(Integer temperature, String weather) {
-        this.temperature = temperature;
-        this.weather = weather;
-    }
+//    public StacjaPogody(Integer temperature, String weather) {
+//        this.temperature = temperature;
+//        this.weather = weather;
+//    }
 
     public int getTemperature() {
 
